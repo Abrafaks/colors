@@ -5,10 +5,15 @@ import ColorSquare from "./ColorSquare";
 
 function App() {
     const [colorName, setColorName] = useState("");
+    const [hexValue, setHexValue] = useState("");
     return (
         <div className="app">
-            <ColorSquare colorName={colorName} />
-            <ColorSearch colorName={colorName} setColorName={setColorName} />
+            <ColorSquare colorName={colorName} hexValue={hexValue} />
+            <ColorSearch
+                colorName={colorName}
+                setColorName={setColorName}
+                setHexValue={setHexValue}
+            />
         </div>
     );
 }
