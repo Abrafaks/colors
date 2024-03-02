@@ -1,9 +1,15 @@
 import React from "react";
 import "./ColorSquare.css";
 
-function ColorSquare({ colorName, hexValue }) {
+function ColorSquare({ colorName, hexValue, isDarkText }) {
     return (
-        <div id="color-square" style={{ backgroundColor: colorName }}>
+        <div
+            id="color-square"
+            style={{
+                backgroundColor: colorName,
+                color: isDarkText ? "#000" : "#fff",
+            }}
+        >
             <p> {colorName || "Empty Value"}</p>
             <p> {hexValue || null}</p>
         </div>

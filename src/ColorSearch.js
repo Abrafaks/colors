@@ -2,7 +2,7 @@ import React from "react";
 import "./ColorSearch.css";
 import colorNames from "colornames";
 
-function ColorSearch({ colorName, setColorName, setHexValue }) {
+function ColorSearch({ colorName, setColorName, setHexValue, checkDarkness }) {
     return (
         <form className="search-form" onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="search-color">Add color name</label>
@@ -13,7 +13,11 @@ function ColorSearch({ colorName, setColorName, setHexValue }) {
                 placeholder="Add color name..."
                 onChange={(e) => {
                     setColorName(e.target.value);
-                    setHexValue(colorNames(e.target.value));
+                    const hexValue = colorNames(e.target.value);
+                    if (hexValue) {
+                        setHexValue(hexValue);
+                        checkDarkness(hexValue);
+                    }
                 }}
                 value={colorName}
             />
