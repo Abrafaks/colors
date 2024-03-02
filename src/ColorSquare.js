@@ -1,7 +1,12 @@
 import React from "react";
+import "./ColorSquare.css";
 
-function ColorSquare() {
-    return <div id="color-square"></div>;
+function ColorSquare({ colorName }) {
+    return (
+        <div id="color-square" style={{ backgroundColor: colorName }}>
+            {colorName || "Empty Value"}
+        </div>
+    );
 }
 
 export default ColorSquare;

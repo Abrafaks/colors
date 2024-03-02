@@ -1,0 +1,25 @@
+.search-form {
+    width: 100%;
+}
+.search-form label {
+    position: absolute;
+    left: -999999px;
+}
+
+.search-form input[type="text"] {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 1);
+    border: none;
+    outline: none;
+}
+
+.search-form input[type="text"]:focus {
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 2px 8px 0px rgba(66, 68, 90, 1);
+}

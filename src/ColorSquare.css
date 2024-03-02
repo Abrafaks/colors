@@ -1,0 +1,12 @@
+#color-square {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 2px 5px 0px rgba(66, 68, 90, 1);
+}
